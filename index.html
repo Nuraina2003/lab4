@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <h1 id="my1">123.</h1>
+<button id="textChanger">Click me</button> 
+<div id="firstDiv">We can only take a maximum of 20 in the room, so book now!</div>
+<h2 id="my2">123.</h2>
+<button id="textAppender">Clic me</button>
+<div id="secondDiv">We can only take a maximum of 20 in the room, so book now!</div>
+<h3 id="my3">123.</h3>
+<button id="htmlAppender">Clic me</button>
+<div id="thirdDiv">Hello</div>
+
+
+<script>
+document.getElementById("textChanger").onclick = function(){
+    document.getElementById("my1").innerHTML="1"
+}
+
+document.getElementById("textAppender").onclick=function(){
+    document.getElementById("secondDiv").innerHTML="We can only take a maximum of 20 in the room"
+    document.getElementById("my2").innerHTML="2"
+    document.getElementById("my1").innerHTML="1,2"
+
+}
+document.getElementById("htmlAppender").onclick=function(){
+    document.getElementById("thirdDiv").innerHTML="You are so beautiful"
+    document.getElementById("secondDiv").innerHTML="thank you"
+    document.getElementById("firstDiv").innerHTML="We can only take a minimum of 5"
+    document.getElementById("my2").innerHTML="2.2"
+    document.getElementById("my1").innerHTML="1.1"
+    document.getElementById("my3").innerHTML="3.3"
+
+    
+}
+
+</script>
+
+</body>
+</html> 

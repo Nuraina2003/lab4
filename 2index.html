@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Image Size</title>
+//4 <h1 onmouseover="style.color='blue'" onmouseout="style.color='black'">Lab4</h1>
+<h2 onclick="this.innerHTML='Lab4'">Click </h2>
+//3 <h1 id="id1">Lab4</h1>
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'blue'">
+Click </button>
+
+ //4 your name Surname: <input type="text" id="fname" onchange="upperCase()">
+<script>
+    function zoom(){
+        var myImg = document.getElementById("1.jpg");
+        var currWidth = myImg.clientWidth;
+        if(currWidth == 500){
+            alert("Maximum zoom-in level reached.");
+        } else{
+            myImg.style.width = (currWidth + 50) + "px";
+        } 
+    }
+ 
+</script>
+</head>
+<body>
+    <p>
+        <button type="button" onclick="zoom()">Zoom</button>
+        <button type="button" onclick="Click()">Click</button>
+    </p>
+   //4 <img src="1.jpg" id="1.jpg" width="250" alt="bike">
+    <script>
+        function upperCase() {
+          const x = document.getElementById("fname");
+          x.value = x.value.toUpperCase();
+        }
+        </script>
+        <script>
+            function bigImg(x) {
+              x.style.height = "200px";
+              x.style.width = "200px";
+            }
+            
+            function normalImg(x) {
+              x.style.height = "150px";
+              x.style.width = "150px";
+            }
+            </script>
+            </head>
+            <body>
+            
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="1.jpg" alt="bike" width="32" height="32">
+
+           //5 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#btn1').click(function(){
+   		$('#imgDiv').show();
+	});
+  	$('#btn2').click(function(){
+   		$('#imgDiv').hide();
+	});
+});
+</script>
+</head>
+<body>
+<div id="imgDiv">
+  
+	<img src="1.jpg" width="100" alt="Show/Hide Image" />
+</div>
+<button type="button" id="btn1">Show</button>
+<button type="button" id="btn2">Hide</button>
+</html>
